@@ -1,47 +1,40 @@
-# Gridsome Liebling Starter
+<div align="center">
 
-Grisome starter based on [Ghost Liebling](https://github.com/eddiesigner/liebling) and tailwindcss.
+<a href="https://www.jammeryhq.com" title="JammeryHQ" target="_blank">
 
-## Demo
-https://gridsome-starter-liebling.now.sh
+  <img src="./jammeryhq.png" width="128" />
+  
+</a>
 
-## Features
+<p>
+Fast-track your JAMstack development & learning
+</p>
+</div>
 
-* Gridsome
-* Tailwindcss 
-* Light and Dark Mode with auto detect  
-* v-tooltip
-* Mega Menu support
-* SCSS
-* Markdown
-* Tags
-* Categories
+<hr />
+
+# About this starter
+
+Gridsome starter that is ideal for blogs that uses markdown for the content and tailwindcss for the styles.
+
+This starter is based on [Ghost Liebling](https://github.com/eddiesigner/liebling) and tailwindcss.
+
+## Key features
+
+* Built with tailwindcss
+* Responsive 
+* Dark Mode
+* Mega Menu
+* Fulltext search
 * Author Pages
-* Blog
-* About Page
+* Custom Image Processor 
 * Pagination
-* Medium Zoom
-* Updated Image Processing to return the `figure` element with caption
-* Full Text Search powered by [gridsome-plugin-flexsearch](https://github.com/thetre97/gridsome-plugin-flexsearch)
+* Syntax Highlighting via PrismJS
 
-## Plugins
+## Installation
 
-With Gridsome offering a plugin-rich ecosystem, there are a few key plugins that make this project possible. 
+Run the following command to create a new gridsome project 
 
-- [Gridsome Source Filesystem](https://gridsome.org/plugins/@gridsome/source-filesystem) Transform files into content that can be fetched with GraphQL in your components.
-- [gridsome-source-static-meta](https://gridsome.org/plugins/gridsome-source-static-meta) source plugin that converts values in JSON and/or YAML files into keys on the global GraphQL metaData query.
-- [gridsome-plugin-flexsearch](https://github.com/thetre97/gridsome-plugin-flexsearch) Add lightning fast search to Gridsome with FlexSearch
-
-
-## Install
-
-### 1. Install Gridsome CLI tool if you don't have
-
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-blog https://github.com/jammeryhq/gridsome-starter-liebling` to install gridsome with this starter
-2. `cd my-blog` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+```
+gridsome create my-blog https://github.com/jammeryhq/gridsome-starter-liebling
+```
