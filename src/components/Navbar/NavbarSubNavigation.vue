@@ -31,6 +31,16 @@
                 </div>
               </g-link>
             </div>
+            <template #prevArrow>
+          <div class="w-8 h-8 z-40 absolute top-0 mt-12 ml-8 p-1 pl-2 bg-white rounded-full">
+            <font-awesome :icon="['fas', 'arrow-left']" size="md"></font-awesome>
+          </div>
+        </template>
+        <template #nextArrow>
+          <div class="w-8 h-8 z-50 absolute right-0 top-0 mt-12 sm:mr-16 mr-8 p-1 pl-2 bg-white rounded-full">
+            <font-awesome :icon="['fas', 'arrow-right']" size="md"></font-awesome>
+          </div>
+        </template>
           </VueSlickCarousel>
         </div>
       </div>
@@ -58,7 +68,6 @@ export default {
     return {
       sliderSettings: {
         dots: false,
-        arrows: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -68,7 +77,7 @@ export default {
           {
             breakpoint: 1024,
             settings: {
-              arrows: false,
+              //arrows: false,
               slidesToShow: 3,
               slidesToScroll: 1,
               dots: false,
@@ -78,7 +87,6 @@ export default {
           {
             breakpoint: 600,
             settings: {
-              arrows: false,
               slidesToShow: 2,
               slidesToScroll: 1,
               initialSlide: 2,
@@ -89,7 +97,6 @@ export default {
           {
             breakpoint: 480,
             settings: {
-              arrows: false,
               slidesToShow: 1,
               slidesToScroll: 1,
               dots: false,
