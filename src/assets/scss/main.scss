@@ -3,12 +3,7 @@
 @tailwind base;
 
 blockquote {
-  @apply border-l;
-  @apply border-l-4;
-  @apply border-l-blue-500;
-  @apply pl-4;
-  @apply italic;
-  @apply my-8;
+  @apply border-l border-l-4 border-l-blue-500 pl-4 italic my-8;
 
   p {
     padding: 0 !important;
@@ -16,45 +11,33 @@ blockquote {
 }
 
 h1, .h1 {
-  @apply font-sans;
-  @apply my-4;
-  @apply font-medium;
+  @apply font-sans my-4 font-medium;
   @include font-size(3rem);
 
 }
 
 h2, .h2 {
-  @apply font-sans;
-  @apply my-4;
-  @apply font-medium;
+  @apply font-sans my-4 font-medium;
   @include font-size(2.25rem);
 }
 
 h3, .h3 {
-  @apply font-sans;
-  @apply my-4;
-  @apply font-medium;
+  @apply font-sans my-4 font-medium;
   @include font-size(1.875rem);
 }
 
 h4, .h4 {
-  @apply font-sans;
-  @apply my-4;
-  @apply font-medium;
+  @apply font-sans my-4 font-medium;
   @include font-size(1.5rem);
 }
 
 h5, .h5 {
-  @apply font-sans;
-  @apply my-4;
-  @apply font-medium;
+  @apply font-sans my-4 font-medium;
   @include font-size(1.25rem);
 }
 
 h6, .h6 {
-  @apply font-sans;
-  @apply my-4;
-  @apply font-medium;
+  @apply font-sans my-4 font-medium;
   @include font-size(1.125rem);
 }
 
@@ -65,14 +48,12 @@ h6, .h6 {
 @import 'node_modules/vue-slick-carousel/dist/vue-slick-carousel';
 
 .container {
-  @apply max-w-screen-xl;
-  @apply px-0;
+  @apply max-w-screen-xl px-0;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  @apply transition-all;
-  @apply duration-200;
+  @apply transition-all duration-200;
 }
 
 .fade-enter,
@@ -83,8 +64,7 @@ h6, .h6 {
 .featured-post-card {
 
   .slick-list {
-    @apply h-full;
-    @apply rounded-lg;
+    @apply h-full rounded-lg;
 
     div:not(.post-card-author):not(.featured-label):not(.post-card-content):not(.post-card-footer) {
       @apply h-full;
@@ -92,10 +72,7 @@ h6, .h6 {
   }
 
   .slick-arrow {
-    @apply absolute;
-    @apply bottom-0;
-    @apply right-0;
-    @apply text-white;
+    @apply absolute bottom-0 right-0 text-white;
   }
 
   transition: all .25s cubic-bezier(.02, .01, .47, 1);
@@ -105,40 +82,19 @@ h6, .h6 {
   }
 
   .post-card-author {
-    @apply absolute;
-    @apply top-0;
-    @apply left-0;
-    @apply z-10;
+    @apply absolute top-0 left-0 z-10;
   }
 
   .post-card-image {
-    @apply h-56;
-    @apply w-full;
-    @apply object-cover;
-    @apply rounded-lg;
-    @apply relative;
-    @apply rounded-b-none
+    @apply h-56 w-full object-cover rounded-lg relative rounded-b-none;
   }
 
   .post-card-content {
-    @apply absolute;
-    @apply top-0;
-    @apply left-0;
-    @apply z-10;
-    @apply mt-20;
-    @apply ml-10;
-    @apply text-white;
+    @apply absolute top-0 left-0 z-10 mt-20 ml-10 text-white;
   }
 
   .post-card-footer {
-    @apply absolute;
-    @apply bottom-0;
-    @apply left-0;
-    @apply text-white;
-    @apply ml-10;
-    @apply mb-10;
-    @apply text-sm;
-    @apply font-semibold;
+    @apply absolute bottom-0 left-0 text-white ml-10 mb-10 text-sm font-semibold;
 
   }
 
@@ -151,28 +107,18 @@ h6, .h6 {
     transform: translateY(-5px);
   }
 
-  @apply relative;
-  @apply border;
+  @apply relative border;
 
   .post-card-author {
-    @apply absolute;
-    @apply top-0;
-    @apply left-0;
-    @apply z-10;
+    @apply absolute top-0 left-0 z-10;
   }
 
   .post-card-image {
-    @apply h-56;
-    @apply w-full;
-    @apply object-cover;
-    @apply rounded-lg;
-    @apply relative;
-    @apply rounded-b-none
+    @apply h-56 w-full object-cover rounded-lg relative rounded-b-none;
   }
 
   .post-card-title {
-    @apply leading-8;
-    @apply text-2xl;
+    @apply leading-8 text-2xl;
   }
 
   .post-card-excerpt {
@@ -180,13 +126,11 @@ h6, .h6 {
   }
 
   .post-card-content {
-    @apply relative;
-    @apply flex-1;
+    @apply relative flex-1;
   }
 
   .post-card-footer {
-    @apply absolute;
-    @apply bottom-0;
+    @apply absolute bottom-0;
   }
 }
 
@@ -195,9 +139,7 @@ h6, .h6 {
 }
 
 .mobileSubnav {
-  @apply absolute;
-  @apply w-full;
-  @apply -mx-2;
+  @apply absolute w-full -mx-2;
 }
 
 @media (max-width: 767px) {
@@ -223,10 +165,7 @@ h6, .h6 {
 .mega-menu {
   left: 0;
   top: 0;
-  @apply mt-16;
-  @apply w-full;
-  @apply absolute;
-  @apply text-left;
+  @apply mt-16 w-full absolute text-left;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -250,18 +189,7 @@ h6, .h6 {
 
 
   &.card-author-tooltip {
-    @apply z-1000;
-    @apply bg-black;
-    @apply text-xs;
-    @apply px-2;
-    @apply leading-normal;
-    @apply py-1;
-    @apply rounded;
-    @apply absolute;
-    @apply text-gray-400;
-    @apply max-w-xs;
-    @apply ml-2;
-    @apply mt-3;
+    @apply z-1000 bg-black text-xs px-2 leading-normal py-1 rounded absolute text-gray-400 max-w-xs ml-2 mt-3;
 
     &::after,
     &::before {
@@ -292,31 +220,16 @@ h6, .h6 {
 
   &.navbar-popover {
 
-    @apply bg-black;
-    @apply text-xs;
-    @apply px-2;
-    @apply leading-normal;
-    @apply py-1;
-    @apply rounded;
-    @apply absolute;
-    @apply text-gray-400;
-    @apply max-w-xs;
-    @apply ml-2;
-    @apply -mt-3;
-    @apply z-1000;
+    @apply bg-black text-xs px-2 leading-normal py-1 rounded absolute text-gray-400 max-w-xs ml-2 -mt-3 z-1000;
 
     &::after {
       bottom: 100%;
       left: 50%;
       border: solid transparent;
       content: " ";
-      @apply h-0;
-      @apply w-0;
+      @apply h-0 w-0 absolute border-8;
       pointer-events: none;
-      @apply absolute;
-      @apply border-8;
       border-bottom-color: #000;
-
       margin-left: -8px;
     }
 
@@ -324,31 +237,16 @@ h6, .h6 {
 
   &.mobile-navbar-popover {
 
-    @apply bg-black;
-    @apply text-xs;
-    @apply px-2;
-    @apply leading-normal;
-    @apply py-1;
-    @apply rounded;
-    @apply absolute;
-    @apply text-gray-400;
-    @apply max-w-xs;
-    @apply ml-2;
-    @apply -mt-3;
-    @apply z-1000;
+    @apply bg-black text-xs px-2 leading-normal py-1 rounded absolute text-gray-400 max-w-xs ml-2 -mt-3 z-1000;
 
     &::after {
       right: 100%;
       top: 50%;
       border: solid transparent;
       content: " ";
-      @apply h-0;
-      @apply w-0;
+      @apply h-0 w-0 absolute border-8;
       pointer-events: none;
-      @apply absolute;
-      @apply border-8;
       border-right-color: #000;
-
       margin-left: -8px;
     }
 
@@ -360,15 +258,12 @@ h6, .h6 {
     Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.mode-dark {
+.dark {
   .post-content {
     p,
     span:not(.token),
     li {
-      @apply tracking-wider;
-      @apply leading-relaxed;
-      @apply font-normal;
-      @apply text-gray-500;
+      @apply tracking-wider leading-relaxed font-normal text-gray-500;
       @include font-size(1.1rem);
     }
   }
@@ -379,23 +274,16 @@ h6, .h6 {
   p,
   span:not(.token),
   li {
-    @apply tracking-wider;
-    @apply leading-relaxed;
-    @apply font-normal;
-    @apply text-gray-800;
+    @apply tracking-wider leading-relaxed font-normal text-gray-800;
     @include font-size(1.1rem);
   }
 
   ol {
-    @apply list-decimal;
-    @apply ml-5;
-    @apply mt-5;
+    @apply list-decimal ml-5 mt-5;
   }
 
   ul {
-    @apply list-disc;
-    @apply ml-5;
-    @apply mt-5;
+    @apply list-disc ml-5 mt-5;
   }
 
   li > ul {
@@ -468,12 +356,12 @@ pre[class*="language-"] {
   @apply bg-gray-200;
 }
 
-.mode-dark {
+.dark {
   pre[class*="language-"]::selection,
   code[class*="language-"]::selection,
   pre[class*="language-"]::mozselection,
   code[class*="language-"]::mozselection {
-    text-shadow: none;
+    text-shadow: none; 
     @apply bg-gray-800;
   }
 
@@ -492,7 +380,7 @@ pre[class*="language-"] {
   :not(pre)>code[class*="language-"] {
     padding: .3em .3em;
     border-radius: .3em;
-    color: #db4c69;
+    color: #db4c69; 
     @apply bg-gray-800;
   }
 }
@@ -607,7 +495,7 @@ pre[class*="language-"]>code[class*="language-"] {
   white-space: pre;
 }
 
-.mode-dark {
+.dark {
   .medium-zoom-overlay {
     background-color: #000 !important;
   }

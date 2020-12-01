@@ -8,7 +8,7 @@
       <div class="relative w-full h-full dark:bg-black bg-white p-8">
         <button
           aria-label="close"
-          class="absolute mr-8 right-0 text-xl border rounded-full dark:border-gray-600 border-gray-700 text-gray-700 dark:text-gray-600 hover:bg-gray-700 dark-hover:bg-gray-600 hover:text-white dark-hover:text-black h-8 w-8 md:h-12 md:w-12 focus:outline-none"
+          class="absolute mr-8 right-0 text-xl border rounded-full dark:border-gray-600 border-gray-700 text-gray-700 dark:text-gray-600 hover:bg-gray-700 dark:hover:bg-gray-600 hover:text-white dark:hover:text-black h-8 w-8 md:h-12 md:w-12 focus:outline-none"
           @click.prevent="close"
         >
           <font-awesome :icon="['fas', 'times']"></font-awesome>

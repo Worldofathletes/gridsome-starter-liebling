@@ -18,8 +18,8 @@ module.exports = {
         },
         presetEnvConfig: {},
         shouldPurge: false,
-        shouldImport: true,
-        shouldTimeTravel: true,
+        shouldImport: false,
+        shouldTimeTravel: false,
         shouldPurgeUnusedKeyframes: true,
       }
     },

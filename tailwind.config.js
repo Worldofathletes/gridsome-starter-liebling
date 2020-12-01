@@ -5,6 +5,7 @@ var flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').de
 
 
 module.exports = {
+  darkMode: 'class',
   purge: {
     content:["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
     options: {
@@ -85,12 +86,11 @@ module.exports = {
     }
   },
   variants: {
-    backgroundColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus'],
-    textColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus'],
-    borderColor: ['responsive', 'hover', 'focus', 'dark', 'dark-hover', 'dark-focus']
+    backgroundColor: ['responsive', 'hover', 'focus', 'dark'],
+    textColor: ['responsive', 'hover', 'focus', 'dark',],
+    borderColor: ['responsive', 'hover', 'focus', 'dark']
   },
   plugins: [
-      require('tailwindcss-dark-mode')(),
     function ({
       addUtilities,
       e,

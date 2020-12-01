@@ -32,15 +32,15 @@
               </g-link>
             </div>
             <template #prevArrow>
-          <div class="w-8 h-8 z-40 absolute top-0 mt-12 ml-8 p-1 pl-2 bg-white rounded-full text-black cursor-pointer">
-            <font-awesome :icon="['fas', 'arrow-left']" size="md"></font-awesome>
-          </div>
-        </template>
-        <template #nextArrow>
-          <div class="w-8 h-8 z-50 absolute right-0 top-0 mt-12 mr-16 md:mr-8 p-1 pl-2 bg-white rounded-full text-black cursor-pointer">
-            <font-awesome :icon="['fas', 'arrow-right']" size="md"></font-awesome>
-          </div>
-        </template>
+              <div class="w-8 h-8 z-40 absolute top-0 mt-12 ml-8 p-1 pl-2 bg-white rounded-full text-black cursor-pointer">
+                <font-awesome :icon="['fas', 'arrow-left']" size="md"></font-awesome>
+              </div>
+            </template>
+            <template #nextArrow>
+              <div class="w-8 h-8 z-50 absolute right-0 top-0 mt-12 mr-16 md:mr-8 p-1 pl-2 bg-white rounded-full text-black cursor-pointer">
+                <font-awesome :icon="['fas', 'arrow-right']" size="md"></font-awesome>
+              </div>
+            </template>
           </VueSlickCarousel>
         </div>
       </div>

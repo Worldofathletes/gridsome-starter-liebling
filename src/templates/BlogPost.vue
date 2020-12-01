@@ -103,7 +103,7 @@
       </div>
     </div>
 
-    <section class="post-related pt-10 border-b border-b-gray-900" v-if="relatedRecords.length>0">
+    <section class="post-related pt-10" v-if="relatedRecords.length>0">
       <div class="container mx-auto">
         
         <div class="text-center">

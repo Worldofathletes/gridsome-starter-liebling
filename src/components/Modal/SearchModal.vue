@@ -6,7 +6,7 @@
           <div class="flex flex-wrap items-stretch w-full mb-4 relative">
             <div class="flex -mr-px">
               <span
-                class="flex items-center leading-normal rounded rounded-r-none border border-r-0 border-gray-500 px-3 whitespace-no-wrap text-gray-400 dark:bg-gray-900 dark:text-gray-700 dark:border-gray-700"
+                class="flex items-center leading-normal rounded rounded-r-none border border-r-0 border-gray-500 px-3 whitespace-nowrap text-gray-400 dark:bg-gray-900 dark:text-gray-700 dark:border-gray-700"
               >
                 <font-awesome :icon="['fas', 'search']" size="lg"></font-awesome>
               </span>
@@ -34,10 +34,10 @@
                 :to="resultEntry.path"
                 
               >
-                <div class="h-full flex items-start hover:bg-gray-200 dark:bg-gray-900 dark-hover:bg-gray-800 rounded-lg">
+                <div class="h-full flex items-start bg-gray-50 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg">
                   <div class="flex-grow px-6">
                     <h2
-                      class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1"
+                      class="tracking-widest text-xs title-font font-medium text-blue-500 mb-1"
                     >{{ resultEntry.node.category}}</h2>
                     <h1
                       class="title-font text-xl font-medium text-gray-900 dark:text-gray-400 mb-3"

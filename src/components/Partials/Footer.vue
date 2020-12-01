@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-900 dark:bg-gray-900 text-white dark:text-gray-400 text-center text-sm">
+  <div class="bg-gray-100 dark:bg-gray-900 text-black dark:text-gray-400 text-center text-sm">
     <div class="container mx-auto py-16">
       <div class="mb-4">
         <p>
@@ -13,7 +13,7 @@
       <div class="mb-4">
         <ul class="list-reset flex justify-center">
           <li v-for="socialItem in $static.metadata.social" :key="socialItem.name" class="px-4">
-            <a :href="socialItem.link" target="_blank" :title="socialItem.name">
+            <a :href="socialItem.link" target="_blank" :title="socialItem.name" class="hover:text-blue-500">
               <font-awesome :icon="icon(socialItem.icon)" size="lg"></font-awesome>
             </a>
           </li>
@@ -26,12 +26,14 @@
               :to="navItem.link"
               :title="navItem.name"
               v-if="navItem.external!=true"
+              class="hover:text-blue-500"
             >{{ navItem.name}}</g-link>
             <a
               :href="navItem.link"
               target="_blank"
               :title="navItem.name"
               v-if="navItem.external==true"
+              class="hover:text-blue-500 "
             >{{ navItem.name}}</a>
           </li>
         </ul>
