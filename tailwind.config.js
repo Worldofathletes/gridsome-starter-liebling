@@ -9,7 +9,7 @@ module.exports = {
   purge: {
     content:["./src/**/*.html", "./src/**/*.vue", "./src/**/*.jsx"],
     options: {
-      whitelist: [
+      safelist: [
         'bg-opacity-0',
         'bg-opacity-25',
         'bg-opacity-50',
