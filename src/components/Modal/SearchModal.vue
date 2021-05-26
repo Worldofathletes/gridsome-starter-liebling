@@ -31,14 +31,14 @@
               v-for="resultEntry in searchResults"
               :key="resultEntry.id">
               <g-link
-                :to="resultEntry.path"
+                :to="resultEntry.node.path"
                 
               >
                 <div class="h-full flex items-start bg-gray-50 hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800 rounded-lg">
                   <div class="flex-grow px-6">
                     <h2
                       class="tracking-widest text-xs title-font font-medium text-blue-500 mb-1"
-                    >{{ resultEntry.node.category}}</h2>
+                    >{{ resultEntry.node.category.title }}</h2>
                     <h1
                       class="title-font text-xl font-medium text-gray-900 dark:text-gray-400 mb-3"
                     >{{ resultEntry.title }}</h1>

@@ -68,7 +68,7 @@ module.exports = {
         collections: [{
           typeName: 'Blog',
           indexName: 'Blog',
-          fields: ['title', 'category', 'excerpt', 'content']
+          fields: ['title', 'category', 'excerpt', 'content', 'path']
         }]
       }
     }
